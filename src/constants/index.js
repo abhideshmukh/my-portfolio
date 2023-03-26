@@ -1,5 +1,4 @@
 import {
-  mobile,
   backend,
   creator,
   web,
@@ -8,13 +7,9 @@ import {
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
   mongodb,
   git,
   Capita,
-  carrent,
   jobit,
   tripguide,
   eis,
@@ -25,6 +20,9 @@ import {
   azure,
   mui,
   spring,
+  pay360,
+  opstrakker,
+  seedball,
 } from "../assets";
 
 export const navLinks = [
@@ -170,66 +168,78 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Pay360",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Pay360 is a complete payment eco-system. It offers the breadth of payment options that we do, from direct debits to point of sale, web and mobile payments. Pay360 also provides a payment gateway, a payment facilitation platform for software providers, a range of value add payment solutions, enabling our customers to meet their own business challenges, fraud detection and ID verification.",
+    tags: [
+      {
+        name: "angular13",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "springBoot",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongoDb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "angularMaterial",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ngRx",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pay360,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Opstrakker",
+    description:
+      "OpsTrakker is a suite of apps that focus on specific use cases to provide high-value manufacturing operations management functionality. OpsTrakker is used to replace paper records or spreadsheets with mobile apps and leverage real-time electronic data to improve manufacturing operations in the pharma industry.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "angular",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ionic4",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "springBoot",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: opstrakker,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Project Seedball",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Project Seed Ball is a Play to Earn blockchain game on WAX developed by The Iconical. This was a side project that we built using Web3 (WAX), ReactJs, MUI them library which is deployed using AWS S3.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mui",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "web3",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
+    image: seedball,
     source_code_link: "https://github.com/",
   },
 ];

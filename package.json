@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build-prod": "vite build && aws s3 sync dist/ s3://abhilash-portfolio",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
     "@react-three/drei": "^9.57.2",
     "@react-three/fiber": "^8.12.0",
     "framer-motion": "^10.2.4",
+    "lamina": "1.0.1",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

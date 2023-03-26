@@ -34,9 +34,11 @@ import eis from "./company/eis.jpg"
 import etpl from "./company/etpl.jpg"
 import ldna from "./company/ldna.jpg"
 
-import carrent from "./carrent.png";
+import pay360 from "./pay360.jpg";
+import opstrakker from "./opstrakker.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import seedball from "./seedball.jpg";
 
 export {
   logo,
@@ -68,11 +70,13 @@ export {
   azure,
   spring,
   microservices,
-  carrent,
   jobit,
   tripguide,
   Capita,
   eis,
   etpl,
-  ldna
+  ldna,
+  pay360,
+  opstrakker,
+  seedball
 };

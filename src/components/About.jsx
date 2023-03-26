@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => {
       scale={1.02}>
       <div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] "
+        className="w-full green-pink-gradient p-[1px] rounded-[20px]"
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
