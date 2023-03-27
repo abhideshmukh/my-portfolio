@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build-prod": "vite build && aws s3 sync dist/ s3://abhilash-portfolio",
+    "dev": "vite --host",
+    "build": "vite optimize && vite build -d",
+    "build-prod": "vite build && aws s3 sync dist/ s3://abhilashdeshmukh.in",
     "preview": "vite preview"
   },
   "dependencies": {
