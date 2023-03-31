@@ -21,6 +21,21 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      animation: {
+        'floatAnimation': 'floatFrames 6s ease-in-out infinite',
+      },
+      keyframes: {
+        floatFrames: {
+          '0%, 100%' : {
+            boxShadow: '0 5px 15px 0px rgba(0,0,0,0.6)',
+		        transform: 'translatey(0px)'
+          },
+          '50%': {
+            boxShadow: '0 25px 15px 0px rgba(0,0,0,0.2)',
+		        transform: 'translatey(-20px)'
+          }
+        }
+      }
     },
   },
   plugins: [],
