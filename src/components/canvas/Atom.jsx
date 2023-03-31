@@ -29,12 +29,24 @@ function Flower({ base, colorA, colorB }) {
   const mesh = useRef()
   const depth = useRef()
   useFrame((state, delta) => {
+    let renderer = state.gl;
+    let canvas = renderer.domElement;
+    canvas.addEventListener("webglcontextlost", (event) => {
+      console.log('lost');
+      event.preventDefault();
+      setTimeout(function () {
+        renderer.forceContextRestore();
+      }, 1);
+    });
+    canvas.addEventListener("webglcontextlost", (event) => {
+      console.log('restored');
+    });
     mesh.current.rotation.z += delta / 2
     depth.current.origin.set(-state.mouse.y, state.mouse.x, 0)
   })
   return (
-    <mesh rotation-y={Math.PI / 2} scale={[2, 2, 2]} ref={mesh}>
-      <torusKnotGeometry args={[0.4, 0.04, 200, 32, 3, 7]} />
+    <mesh rotation-y={Math.PI / 2} scale={[2, 2, 2]} ref={mesh} dispose={null}>
+      <torusKnotGeometry args={[0.4, 0.04, 200, 32, 3, 7]} dispose={null}/>
       <LayerMaterial>
         <Base color={base} alpha={1} mode="normal" />
         <Depth colorA={colorB} colorB={colorA} alpha={0.5} mode="normal" near={0} far={3} origin={[1, 1, 1]} />

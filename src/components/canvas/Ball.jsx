@@ -24,6 +24,7 @@ const Ball = (props) => {
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
+          dispose={null}
         />
         <Decal
           position={[0, 0, 1]}
@@ -31,6 +32,7 @@ const Ball = (props) => {
           scale={1}
           map={decal}
           flatShading
+          dispose={null}
         />
       </mesh>
     </Float>
@@ -40,7 +42,6 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
