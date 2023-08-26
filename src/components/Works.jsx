@@ -16,7 +16,7 @@ const ProjectCard = ({
 }) => {
   const [flipHorizontally, toggleFlip] = useState(false);
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -53,7 +53,7 @@ const ProjectCard = ({
           </div>)}
         </div>
       </Tilt>
-    </motion.div>
+    // </motion.div>
   );
 };
 
