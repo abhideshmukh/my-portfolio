@@ -19,7 +19,7 @@ export default function AtomCanvas() {
         <pointLight position={[10, 10, 5]} />
         <pointLight position={[-10, -10, -5]} color='#000000' />
         <ambientLight intensity={0.4} />
-        <Environment preset="warehouse" />
+        {/* <Environment preset="warehouse" /> */}
       </Suspense>
     </Canvas>
   )

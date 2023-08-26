@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build -d",
-    "build-prod": "vite build && aws s3 sync dist/ s3://abhilashdeshmukh.in",
+    "build-prod": "vite build --minify && aws s3 sync dist/ s3://abhilashdeshmukh.in",
     "preview": "vite preview",
     "host": "vite --host"
   },
